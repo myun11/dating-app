@@ -23,3 +23,20 @@
   max-height: 70%;
   font-size: calc(10px + 2vmin);
 }
+
+.Carousel-image {
+}
+
+.Carousel-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: rgb(100, 140, 162);
+}
+
+.Testing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

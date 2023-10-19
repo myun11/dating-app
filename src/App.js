@@ -12,12 +12,9 @@ function App() {
   return (
 
     <div className="App">
-          <NextUIProvider>
-      <header >
+      <NextUIProvider>
         <Panel/>
-      </header>
-      
-    </NextUIProvider>
+      </NextUIProvider>
     </div>
   );
 }
