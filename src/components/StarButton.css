@@ -1,0 +1,41 @@
+.StarButton .StarIcon {
+	/* 1. Give the star a gray `stroke` by default */
+	stroke: #ababab;
+	
+
+	/* We'll be animating the transform of the StarIcon */
+	transition: transform 100ms;
+}
+.StarButton:active .StarIcon {
+	/* 2. When the user starts clicking/touching, make the star
+          slightly smaller */
+	transform: scale(0.5);
+}
+.StarButton--starred .StarIcon {
+	/* 3. When `starred`, add a yellow `fill` to the star and
+          remove the `stroke` */
+	fill: #f7d527;
+	stroke: none;
+
+	/* 4. When `starred`, make the star larger */
+	/* 5. When `starred`, rotate the star by 2 spikes */
+	animation: 650ms star-grow-rotate ease-out;
+}
+
+@keyframes star-grow-rotate {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+
+	50% {
+		transform: scale(1.5) rotate(120deg);
+	}
+
+	100% {
+		/* The star has 5 spikes: 360deg / 5 = 72deg. 
+           -> 72deg is a rotation by 1 spike. 
+           -> 144deg is a rotation by 2 spikes.
+        */
+		transform: scale(2) rotate(144deg);
+	}
+}

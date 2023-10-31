@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Panel from './components/Panel';
+import AboutMe from './components/AboutMe';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
